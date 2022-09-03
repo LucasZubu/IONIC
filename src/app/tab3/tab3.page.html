@@ -1,17 +1,63 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+  <ion-toolbar color="cinza">
+    <ion-item color="cinza">
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" />
+      </ion-avatar>
+      <ion-title>     
+        Teste
+      </ion-title>
+    </ion-item>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="cinza-fundo">
+  <!-- Default Progressbar -->
+  <ion-grid>
+    <ion-row size="2">
+        <ion-col size="12">
+          <ion-progress-bar value="0.20" color="roxo"></ion-progress-bar>  
+        </ion-col>
+    </ion-row>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-row size="2">
+      <ion-col size="12">
+        <ion-progress-bar color="roxo" value="0.40"></ion-progress-bar>
+      </ion-col>
+  </ion-row>
+
+  <ion-row size="2">
+    <ion-col size="12">
+      <ion-progress-bar color="roxo" value="0.6"></ion-progress-bar>
+    </ion-col>
+</ion-row>
+
+<ion-row size="2">
+  <ion-col size="12">
+    <ion-progress-bar value="0.25" buffer="0.8" color="roxo"></ion-progress-bar>
+  </ion-col>
+</ion-row>
+
+<ion-row size="2">
+  <ion-col size="12">
+    <ion-progress-bar type="indeterminate" color="roxo"></ion-progress-bar>
+  </ion-col>
+</ion-row>
+
+<ion-row size="2">
+  <ion-col size="12">
+    <ion-progress-bar type="indeterminate" reversed="true" color="roxo"></ion-progress-bar>
+  </ion-col>
+</ion-row>
+  </ion-grid>
+
+<!-- Default Progressbar with 50 percent -->
+
+
+<!-- Colorize Progressbar -->
+
+
+
+<!-- Other types -->
+
 </ion-content>
